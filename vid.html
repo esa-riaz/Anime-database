@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Now</title>
+    <link rel="stylesheet" href="./vid.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="landing__page">
+        <div class="row">
+            <nav>
+                <figure class="nav__img--wrapper">
+                    <a href="./index.html">
+                        <img class="logo"
+                            src="./assets/png-transparent-a-o-t-wings-of-freedom-attack-on-titan-logo-eren-yeager-corps-removebg-preview.png"
+                            alt="">
+                    </a>
+                </figure>
+                <ul class="nav__link--list">
+                    <li class="nav__links">
+                        <a href="./index.html" class="nav__link--anchor">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__links">
+                        <a href="#" class="nav__link--anchor">
+                            More anime
+                        </a>
+                    </li>
+                    <li class="nav__links">
+                        <a href="#" class="nav__link--anchor">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="big__wrapper">
+        <div class="player">
+            <video src="./assets/yt5s.com-RickRoll'D(360p).mp4" autoplay class="viewer"></video>
+        </div>
+
+        <div class="player__controls">
+            <div class="progress">
+                <div class="progress__filled"></div>
+            </div>
+            <div class="extra__div">
+                <button class="player__button toggle" title="Toggle Play">
+                    <i class="fas fa-play"></i>
+                </button>
+                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1"
+                 onchange="handleRangeUpdate(event)" onmousemove="handleRangeUpdate(event)">
+                <button class="player__button " value="-10" onclick="skip(event)">10s<i class="fas fa-backward"></i></button>
+                <button class="player__button " value="25" data-skip="25" onclick="skip(event)">25s<i class="fas fa-forward"></i></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+ <script src="./vid.js"></script>
+</html>

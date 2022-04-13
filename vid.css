@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.orange {
+    color: orange;
+    font-weight: bold;
+}
+
+
+/*  
+
+
+NAV 
+
+
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+    
+}
+
+
+.logo {
+    margin-top: 8px;
+    height: 140px;
+    width: 140px;
+    
+    
+}
+
+.nav__link--list {
+    display: flex;
+    
+}
+
+.nav__links {
+    margin-right: 24px ;
+    
+}
+
+.nav__link--anchor {
+    color: #fff;
+}
+
+
+#landing__page {
+    background-image: url(./assets/image.png) ;
+    padding-bottom: 24px;
+    
+}
+
+body {
+    background: rgb(70, 61, 61);
+}
+
+.big__wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    
+}
+
+.player {
+    height: 55vh;
+    width: 700px;
+    background-color: black;
+    
+}
+
+video {
+    height: 55vh;
+    width: 700px;
+}
+
+
+
+.fa-play,
+input,
+.fa-forward,
+.fa-backward,
+.player__button {
+    cursor: pointer;
+    color: orange;
+    border: none;
+    background-color: #242424;
+}
+
+input[type=range] {
+    height: 34px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 30%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 1px 1px 1px #002200;
+    background: #FFAE21;
+    border-radius: 1px;
+    border: 1px solid #18D501;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 3px 3px 3px #00AA00;
+    border: 2px solid #83E584;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #439643;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #FFAE21;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 1px 1px 1px #002200;
+    background: #FFAE21;
+    border-radius: 1px;
+    border: 1px solid #18D501;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 3px 3px 3px #00AA00;
+    border: 2px solid #83E584;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #439643;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #FFAE21;
+    border: 1px solid #18D501;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #002200;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #FFAE21;
+    border: 1px solid #18D501;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #002200;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 3px 3px 3px #00AA00;
+    border: 2px solid #83E584;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #439643;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #FFAE21;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #FFAE21;
+  }
+
+.progress{
+    background-color: #242424;
+    height: 10px;
+    
+}
+
+
+.progress__filled {
+    background-color: orange;
+    height: 10px;
+   
+}
+.player__controls {
+    height: 70;
+    width: 700px;
+    border: 2px solid #242424;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.extra__div {
+    display: flex;
+    justify-content: space-evenly;
+}

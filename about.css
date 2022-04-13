@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.no {
+    cursor: not-allowed;
+}
+
+.orange {
+    color: orange;
+    font-weight: bold;
+}
+
+
+/*  
+
+
+NAV 
+
+
+*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+    
+}
+
+
+.logo {
+    margin-top: 8px;
+    height: 140px;
+    width: 140px;
+    
+    
+}
+
+.nav__link--list {
+    display: flex;
+    
+}
+
+.nav__links {
+    margin-right: 24px ;
+    
+}
+
+.nav__link--anchor {
+    color: #fff;
+}
+
+
+#landing__page {
+    background-image: url(./assets/image.png) ;
+    padding-bottom: 24px;
+    
+}
+
+/*
+
+
+Main description 
+
+*/
+
+.container {
+    margin: 32px 0 32px 32px;
+    
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.main__description--wrapper {
+    border: 2px solid #242424;
+    border-radius: 16px;
+    height: 65vh;
+    display: flex;
+    
+    
+   
+}
+
+.anime__img{
+    margin: 16px 0 0 16px;
+    border-radius: 16px;
+    height: 210px;
+    width: 140px;
+}
+
+.img__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.watch__now {
+    margin: 32px 0 0 16px;
+    width: 80%;
+    border: 2px solid #242424;
+    border-radius: 24px;
+    padding: 12px 16px;  
+    background-color: rgb(247, 190, 84);  
+    transition: all 300ms ease;
+}
+
+.watch__now:hover {
+    transform: scale(1.1);
+}
+
+.watch__now--link {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.anime__title {
+margin-top: 16px;
+}
+
+.synopsis {
+    width: 75%;
+    text-align: center;
+}
+
+.extra__info {
+    text-align: center;
+    margin-bottom: 16px;
+}
